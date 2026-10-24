@@ -54,9 +54,9 @@ try
     Preloader.Initialize();
     Preloader.Finish();
     int patchedMethods = Harmony.GetAllPatchedMethods().Count();
-    if (patchedMethods != 72)
+    if (patchedMethods != 73)
         throw new InvalidOperationException(
-            $"Expected 72 patched methods, found {patchedMethods}."
+            $"Expected 73 patched methods, found {patchedMethods}."
         );
     CheckTimestampPatches();
     Console.WriteLine($"OK: {patchedMethods} LinuxCompat methods patched against {game2}");
